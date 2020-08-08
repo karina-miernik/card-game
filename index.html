@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet" />
+
+    <title>Oczko</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="rules">
+            <h2 class="rules__title">Gra karciana
+                Oczko
+            </h2>
+            <p> Oczko to prosta gra karciana, polegająca na dobieraniu kolejnych kart dotąd, aby osiągnąć wartość
+                liczbową posiadanych kart jak najbliższą (ale nie większą niż) 21.
+            </p>
+            <h3>ZASADY GRY: </h3>
+            <div class="rules__content">
+                <ol>
+
+                    <li> Gracz otrzymuje kolejne karty z talii dotąd, aż sam zdecyduje, że nie chce już więcej kart, lub
+                        otrzyma
+                        wynik 21 lub większy.</li>
+                    <li> Suma większa lub równa 22 oznacza przegraną. </li>
+                    <li> Wyjątkiem od tej reguły jest perskie oczko (dwa asy). Perskie oczko zawsze oznacza wygraną.
+                    </li>
+                    <li> Jeśli żaden z graczy nie otrzyma wyniku 21 wygrywa ten który był najbliżej tej wartości. W
+                        oczko
+                        gra się talią od 2 do asa.
+                    </li>
+                    <li> Punktacja:
+                        <ul class="rules__scores">
+                            <li> karty 2 do 10 mają wartość równą wartości karty</li>
+
+                            <li> walet – 2 pkt.</li>
+                            <li> dama – 3 pkt.
+                            </li>
+                            <li>
+
+                                dama – 3 pkt.
+                            </li>
+                            <li>
+                                król – 4 pkt.
+
+                            </li>
+                            <li> As – 11 pkt.</li>
+                    </li>
+                    </ul>
+                </ol>
+                <p>
+                    Powyższe zasady możesz sobie przypomnieć klikając podczas gry przycisk „zasady gry”.
+
+                </p>
+            </div>
+
+            <div class="gameStartButtons">
+                <button class='singlePlayerButton'>SinglePlayer</button>
+                <!-- <button class='multiPlayerButton'>Multiplayer</button> -->
+
+            </div>
+        </div>
+
+        <div class="gameWindow hiddenOnStart">
+            <div class="gameNav">
+                <button class="gamePlay">Zasady gry</button>
+
+
+            </div>
+            <div class="gameWindowButtons">
+                <button class="actionBtn play">Zagraj</button>
+                <button class="actionBtn draw">Weź kartę</button>
+                <button class="actionBtn pas"> PAS</button>
+                <button class="actionBtn reset"> RESET</button>
+            </div>
+
+            <div class="gameWindowPlayers">
+                <div class="singleplayer">
+                    <div class="singleplayer__card blank">
+                        <img class="singleplayerImg" src="img/red.svg" width="200px" height="200px" />
+                        <img class="singleplayerImgSecond" src="img/red.svg" width="200px" height="200px" />
+                        <img class="singleplayerImgThird none" src="" width="200px" height="200px" />
+                    </div>
+                    <div class="singleplayer__score">0</div>
+                    <div class="singleplayer__result"></div>
+                </div>
+                <!-- <div class="multiplayer">
+                    <div class="multiplayer__card">
+                        <img src="img/red.svg" width="200px" height="200px" />
+                        <img src="img/red.svg" width="200px" height="200px" />
+                    </div>
+                    <div class="multiplayer__score">0</div>
+
+                </div> -->
+            </div>
+        </div>
+
+
+
+        <!-- <canvas class="canvas">
+                <img src='' />
+            </canvas> -->
+
+    </div>
+
+
+    </div>
+</body>
+<script src="./script.js"></script>
+
+
+</html>
