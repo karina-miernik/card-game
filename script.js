@@ -78,7 +78,6 @@ const cards = {
   // Initial draw
 
   drawCards(currentDeck, count) {
-    let shuffleStatus = currentDeck.shuffeled
     fetch(
       `${cards.initial.BASE_URL}/${currentDeck.deck_id}/draw/?count=${count}`,
     )
@@ -135,14 +134,13 @@ const cards = {
   ///// Draw one Card
 
   drawOneCard(currentDeck, count) {
-    let shuffleStatus = currentDeck.shuffeled
+
     fetch(
       `${cards.initial.BASE_URL}/${currentDeck.deck_id}/draw/?count=${count}`,
     )
       .then((res) => res.json())
       .then((data) => {
         cards.initial.currentDeck = data
-        cards.initial.currentDeck.shuffeled = shuffleStatus
         cards.placeOneCard(cards.initial.currentDeck)
       })
     return cards.initial.currentDeck
