@@ -29,7 +29,7 @@ rulesButton.addEventListener('click', () => {
 
 ///// Card Game
 
-const cardBlank = document.querySelector('.blank')
+
 const singleplayerScore = document.querySelector('.singleplayer__score')
 const singleplayerResult = document.querySelector('.singleplayer__result')
 const singleplayerImg = document.querySelector('.singleplayerImg')

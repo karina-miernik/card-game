@@ -71,11 +71,6 @@ body {
   margin: 1rem 0;
 }
 
-.singlePlayerButton,
- .multiPlayerButton {
-  display: block;
-  cursor: pointer;
-}
 /*  GAME WINDOW  */
 .gameWindow {
   width: 100vw;
@@ -103,7 +98,6 @@ position: relative;
   align-items: center;
 }
 .singlePlayerButton,
- .multiPlayerButton,
 .gamePlay {
   background-color: var(--fourth-color);
   border: none;
@@ -117,13 +111,11 @@ position: relative;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   margin: 0.5rem 0.5rem;
-  /* width: 70%; */
   height: auto;
   align-self: center;
 }
 
 .singlePlayerButton:hover,
- .multiPlayerButton:hover,
 .gamePlay:hover {
   cursor: pointer;
   transition: 0.3s;
@@ -197,10 +189,10 @@ flex-direction: column;
   color: var(--third-color);
 }
 
-/* SINGLEPLAYER BOX, MULTIPLAYER BOX */
+/* SINGLEPLAYER BOX */
 .singleplayer {
   width: 80%;
-  margin: 2rem 0;
+  margin: 0.5rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -210,9 +202,8 @@ flex-direction: column;
   visibility: hidden
 }
 
-.singleplayer__score,
-.multiplayer__score {
-  padding: 2rem;
+.singleplayer__score {
+  padding: 1rem;
   width: 50%;
   border-radius: 50%;
   font-weight: 600;
@@ -220,33 +211,15 @@ flex-direction: column;
   color: var(--fifth-color);
   text-shadow: 2px 2px 2px rgba(41, 39, 39, 0.32);
 }
-.multiplayer {
-  width: 80%;
-  margin: 2rem 0;
-  margin:0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.multiplayer__box {
-  width: 50%;
-  margin: 2rem 0;
-  margin:0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.singleplayer__result,
-.multiplayer__result{
+.singleplayer__result{
 
   width: 100%;
-
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
+margin-bottom: 2rem;
   color: var(--fifth-color);
+  
   text-shadow: 2px 2px 2px rgba(41, 39, 39, 0.32);
 }
 
@@ -269,6 +242,10 @@ flex-direction: column;
     margin-left: 1rem;
 
     align-self: center;
+  }
+  .singleplayer__result{
+
+    height:4.5rem;
   }
 .gameWindowButtons{
   flex-direction: row;
