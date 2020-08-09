@@ -243,10 +243,7 @@ margin-bottom: 2rem;
 
     align-self: center;
   }
-  .singleplayer__result{
 
-    height:4.5rem;
-  }
 .gameWindowButtons{
   flex-direction: row;
 }
